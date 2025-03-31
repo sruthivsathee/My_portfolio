@@ -1,0 +1,51 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #282c34;
+  color: yellowgreen;
+  height: 75vh;
+  padding: 80px 0;
+}
+
+.about-container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+  width: 450px;
+  height: 350px;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.1);
+}
+
+.about-right {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.about-right h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.about-right p {
+  font-size: 18px;
+  line-height: 1.5;
+}

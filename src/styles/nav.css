@@ -1,0 +1,44 @@
+.navbar {
+  position: fixed; /* Fixes navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #333;
+  color: yellowgreen;
+  z-index: 1000; /* Ensures the navbar stays on top */
+  margin-right: 20px; /* Adds right margin */
+}
+.heading {
+  font-weight: 500;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: xx-large;
+}
+
+/* Push the content down to avoid overlap */
+body {
+  padding-top: 60px; /* Adjust this based on navbar height */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin-right: 50px; /* Adds spacing on the right */
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: yellowgreen;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: white; /* Changes color on hover */
+}
