@@ -4,7 +4,11 @@ import "./../../styles/nav.css";
 const Nav = () => {
   return (
     <nav className="navbar">
-      <h1 className="heading">SRUTHI V S</h1>
+      <h1 className="heading">
+        <a className="a-heading" href="/">
+          SRUTHI V S
+        </a>
+      </h1>
       <ul>
         <li>
           <a href="#about">About</a>

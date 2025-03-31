@@ -12,10 +12,15 @@
   z-index: 1000; /* Ensures the navbar stays on top */
   margin-right: 20px; /* Adds right margin */
 }
-.heading {
-  font-weight: 500;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: xx-large;
+.a-heading {
+  text-decoration: none;
+  color: yellowgreen; /* Default color */
+  transition: color 0.3s ease-in-out; /* Smooth transition */
+  font-size: 30px;
+}
+
+.a-heading:hover {
+  color: white; /* Change color on hover */
 }
 
 /* Push the content down to avoid overlap */

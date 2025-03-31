@@ -7,7 +7,6 @@ const Skills = () => {
     { name: "JavaScript", level: "85%" },
     { name: "HTML & CSS", level: "95%" },
     { name: "Redux", level: "75%" },
-    {name: "Tailwind CSS" level:"90%"}
   ];
 
   return (
