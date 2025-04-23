@@ -47,3 +47,106 @@ body {
 .navbar ul li a:hover {
   color: white; /* Changes color on hover */
 }
+.hamburger-icon {
+  display: none; /* Hide hamburger icon by default */
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-logo h1 {
+    font-size: 24px;
+  }
+
+  .navbar-links {
+    margin-right: 20px;
+  }
+
+  .navbar-links li {
+    margin: 0 10px;
+  }
+
+  .a-heading {
+    font-size: 26px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: block; /* Show the menu icon */
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul li {
+    margin: 15px 0;
+  }
+
+  .navbar ul li a {
+    font-size: 18px;
+  }
+}
+
+/* Small Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 10px;
+  }
+
+  .navbar-logo h1 {
+    font-size: 20px;
+  }
+
+  .hamburger-icon {
+    font-size: 22px;
+  }
+
+  .navbar-links {
+    top: 50px;
+  }
+
+  .navbar-links li a {
+    font-size: 16px;
+  }
+
+  .a-heading {
+    font-size: 22px;
+  }
+}

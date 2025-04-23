@@ -2,7 +2,6 @@
   background: #282c34;
   color: yellowgreen;
   text-align: center;
-  padding: 50px 0;
   height: 75vh;
   display: flex;
   flex-direction: column;
@@ -28,7 +27,7 @@
 .skill-bar {
   width: 100%;
   height: 10px;
-  background: yellowgreen;
+  background: #c0e57c;
   border-radius: 5px;
   margin-top: 5px;
   position: relative;
@@ -39,4 +38,17 @@
   background: yellowgreen;
   border-radius: 5px;
   transition: width 1s ease-in-out;
+}
+@media (max-width: 768px) {
+  .skills-container {
+    width: 80%;
+  }
+
+  .skill-name {
+    font-size: 16px;
+  }
+
+  .skill-bar {
+    height: 10px;
+  }
 }

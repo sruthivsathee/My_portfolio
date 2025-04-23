@@ -1,7 +1,7 @@
 .home {
   display: flex;
   text-align: center;
-  padding: 70px;
+  padding: 90px;
   background: #282c34;
   color: white;
   height: 75vh;
@@ -31,4 +31,89 @@
 }
 .p-home {
   font-size: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    padding: 50px;
+    height: auto;
+  }
+
+  .left-side {
+    width: 100%;
+    padding: 0;
+  }
+
+  .right-side {
+    padding: 40px;
+    font-size: 25px;
+  }
+
+  .pro-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+  }
+
+  .p-home {
+    font-size: 50px;
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    padding: 30px;
+    height: auto;
+  }
+
+  .left-side {
+    width: 100%;
+    padding: 0;
+  }
+
+  .right-side {
+    padding: 30px;
+    font-size: 22px;
+  }
+
+  .pro-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  .p-home {
+    font-size: 40px;
+  }
+}
+
+/* Small Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .home {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .left-side {
+    width: 100%;
+    padding: 0;
+  }
+
+  .right-side {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .pro-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+  }
+
+  .p-home {
+    font-size: 30px;
+  }
 }

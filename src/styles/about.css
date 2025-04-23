@@ -49,3 +49,49 @@
   font-size: 18px;
   line-height: 1.5;
 }
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .about-right {
+    padding-top: 20px;
+  }
+
+  .about-right h2 {
+    font-size: 28px;
+  }
+
+  .about-right p {
+    font-size: 16px;
+  }
+
+  .about-img {
+    width: 320px;
+  }
+}
+
+/* 🔹 Small Mobile Screens */
+@media (max-width: 600px) {
+  .about {
+    padding: 50px 5%;
+  }
+
+  .about-right h2 {
+    font-size: 24px;
+  }
+
+  .about-right p {
+    font-size: 14px;
+  }
+
+  .about-img {
+    width: 250px;
+  }
+}
