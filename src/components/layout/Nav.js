@@ -12,7 +12,7 @@ const Nav = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <h1>SRUTHI V S</h1>
+        <h1>SRUTHI</h1>
       </div>
 
       {/* Hamburger Icon */}
